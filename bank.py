@@ -6,7 +6,6 @@ class Bank :
     def deposit(self, amount):
         if amount > 0:
             self.balance += amount
-<<<<<<< HEAD
             print(f" ฝากเงิน {amount} สำเร็จ ยอดคงเหลือ :{self.balance}")
         else :
             print(" ยอดคงเหลือต้องมากกว่า 0 ")
@@ -23,17 +22,6 @@ class Bank :
 Bank_system = Bank("โชกุน", 1000)
 Bank_system.deposit(1000)
 Bank_system.withdraw(1000)
-=======
-            print(f"ฝากเงิน {amount} สำเร็จ! ยอดคงเหลือ: {self.balance}")
-        else:
-            print("ยอดเงินฝากต้องมากกว่า 0")
-
-    def withdraw(self, amount):
-        if 0 < amount <= self.balance:
-            self.balance -= amount
-            print(f"ถอนเงิน {amount} สำเร็จ! ยอดคงเหลือ: {self.balance}")
-        else:
-            print("ยอดเงินไม่เพียงพอ ")
 
 Bank_system = Bank("Natthawut", 1000)
 Bank_system.deposit(1000)
@@ -95,4 +83,4 @@ print(f"\nกำลังทดสอบถอนเงินจำนวน: {o
 if BankSecurity.validate_amount(over_amount):
     my_account.withdraw(over_amount)
 
->>>>>>> eddd00070452c7099f164c18f947b52598c9d437
+
